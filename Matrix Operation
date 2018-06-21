@@ -1,0 +1,54 @@
+python 2.7
+numpy 1.10.4
+
+
+A = [1 2]
+    [3 4]
+
+B = [2 2]
+    [2 2]
+
+inverse A = [-2      1]
+            [ 1.5 -0.5]
+       
+A product B = [6  6 ]
+              [14 14]
+              
+B divide A = B*inv(A)
+           = [-1 1]
+             [-1 1]
+
+
+% matlab
+A = [1, 2; 3, 4]
+B = [2, 2; 2, 2]
+
+#python
+type = array -> element wise operation
+
+A = np.array([[2, 2], [2, 2]], dtype=float)
+B = np.array([[1, 2], [3, 4]], dtype=float)
+
+print np.multiply(A, B)
+print A*B
+[[ 2.  4.]
+ [ 6.  8.]]
+
+
+print np.linalg.inv(A)
+[[-2.   1. ]
+ [ 1.5 -0.5]]
+
+
+
+ 
+type = mat   -> matrix operation
+A = np.mat([1, 2],[3, 4], dtype=float)
+B = np.mat([2, 2],[2, 2], dtype=float)
+
+
+
+    
+
+            
+            
